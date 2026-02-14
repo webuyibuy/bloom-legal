@@ -51,18 +51,18 @@
             font-size: 24px;
             margin-top: 40px;
             margin-bottom: 16px;
-            color: #2d3748;
+            color: #333;
         }
         h3 {
             font-size: 18px;
             margin-top: 24px;
             margin-bottom: 12px;
-            color: #4a5568;
+            color: #555;
         }
         p {
             margin-bottom: 16px;
         }
-        ul {
+        ul, ol {
             margin-left: 24px;
             margin-bottom: 16px;
         }
@@ -70,164 +70,179 @@
             margin-bottom: 8px;
         }
         .highlight {
-            background: #edf2f7;
-            padding: 20px;
-            border-radius: 8px;
+            background: #fff3cd;
+            padding: 16px;
+            border-left: 4px solid #ffc107;
             margin: 24px 0;
-            border-left: 4px solid #667eea;
+            border-radius: 4px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .container {
-                padding: 24px;
+                padding: 32px 24px;
             }
             h1 {
                 font-size: 28px;
-            }
-            h2 {
-                font-size: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">← Back to Legal Hub</a>
+        <a href="index.html" class="back-link">← Back to Legal Documents</a>
         
         <h1>Privacy Policy</h1>
         <div class="meta">
-            <strong>Last Updated:</strong> February 5, 2026<br>
-            <strong>Effective Date:</strong> February 5, 2026
+            <strong>App:</strong> Bloom: Smart Task &amp; Habits<br>
+            <strong>Package:</strong> com.bloom.productivity<br>
+            <strong>Effective Date:</strong> February 14, 2026<br>
+            <strong>Last Updated:</strong> February 14, 2026
         </div>
 
         <h2>Introduction</h2>
-        <p>Welcome to Bloom ("we," "our," or "us"). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App").</p>
+        <p>This Privacy Policy explains how Bloom: Smart Task &amp; Habits ("Bloom," "we," "our," or "us") collects, uses, shares, and protects information when you use our mobile app.</p>
 
         <h2>Information We Collect</h2>
 
-        <h3>1. Personal Information</h3>
-        <p>When you use Bloom, we may collect:</p>
+        <h3>1. Account and Identity Data</h3>
         <ul>
-            <li><strong>Account Information:</strong> Email address and profile information when you sign up using Google Sign-In</li>
-            <li><strong>User-Generated Content:</strong> Tasks, routines, challenges, and notes you create within the App</li>
-            <li><strong>Usage Data:</strong> Information about how you interact with the App, including task completions and app features used</li>
+            <li>Email address</li>
+            <li>Authentication identifiers (for example, Google account ID and internal user ID)</li>
+            <li>Basic profile data from sign-in providers (for example, display name and profile image)</li>
         </ul>
 
-        <h3>2. Automatically Collected Information</h3>
+        <h3>2. App Content and Productivity Data</h3>
         <ul>
-            <li><strong>Device Information:</strong> Device type, operating system, and app version</li>
-            <li><strong>Log Data:</strong> Error logs and performance metrics (if you opt-in to error reporting)</li>
-            <li><strong>Authentication Tokens:</strong> Securely stored tokens for maintaining your session</li>
+            <li>Tasks, subtasks, routines, challenge/history items, and related productivity data</li>
+            <li>App preferences and notification settings</li>
         </ul>
 
-        <h2>How We Use Your Information</h2>
-        <p>We use the collected information for:</p>
+        <h3>3. Voice and Audio Data (Microphone)</h3>
         <ul>
-            <li><strong>Service Delivery:</strong> Providing and maintaining the App's functionality</li>
-            <li><strong>Personalization:</strong> Customizing your experience and remembering your preferences</li>
-            <li><strong>Communication:</strong> Sending notifications about your tasks and challenges (if enabled)</li>
-            <li><strong>Improvement:</strong> Analyzing usage patterns to improve the App</li>
-            <li><strong>Security:</strong> Protecting against unauthorized access and fraudulent activity</li>
-            <li><strong>AI Features:</strong> Processing your requests for AI-powered task generation (if you use this feature)</li>
+            <li>If you use voice features (including AI Companion voice sessions), Bloom requests microphone access (<strong>RECORD_AUDIO</strong>)</li>
+            <li>Audio input is processed to provide speech-to-text and voice interaction functionality</li>
+            <li>We may process associated transcripts or voice-derived text needed to deliver feature output</li>
         </ul>
 
-        <h2>Data Storage and Security</h2>
-
-        <h3>Local Storage</h3>
-        <p>Most of your data is stored locally on your device using secure storage mechanisms:</p>
+        <h3>4. Purchases and Subscription Data</h3>
         <ul>
-            <li><strong>iOS:</strong> Keychain for sensitive data</li>
-            <li><strong>Android:</strong> Keystore for sensitive data</li>
-            <li>AsyncStorage for non-sensitive app preferences</li>
+            <li>Purchase status, subscription entitlement state, product identifiers, and transaction metadata required to manage billing features</li>
         </ul>
 
-        <h3>Cloud Storage (Supabase)</h3>
-        <p>When you're online, we sync your data to our secure cloud database (Supabase) to:</p>
+        <h3>5. Diagnostics and Technical Data</h3>
         <ul>
-            <li>Enable access across multiple devices</li>
-            <li>Provide backup and recovery</li>
-            <li>Support real-time synchronization</li>
+            <li>Crash logs, error events, and diagnostics metadata (for example, device model, OS version, app version, timestamps)</li>
+            <li>Security and anti-abuse telemetry required to operate and protect the app</li>
         </ul>
 
-        <div class="highlight">
-            <strong>Security Measures:</strong> We implement industry-standard security practices including:
-            <ul style="margin-top: 12px; margin-bottom: 0;">
-                <li>Row-Level Security (RLS) policies ensuring you can only access your own data</li>
-                <li>Encrypted data transmission (HTTPS/TLS)</li>
-                <li>Secure authentication via Google OAuth</li>
-                <li>Regular security audits and updates</li>
-            </ul>
-        </div>
-
-        <h2>Third-Party Services</h2>
-        <p>We use the following third-party services:</p>
-
-        <h3>Google Sign-In</h3>
-        <p>Used for authentication. Google's privacy policy applies: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-
-        <h3>Supabase</h3>
-        <p>Our backend database provider. Supabase's privacy policy applies: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
-
-        <h3>OpenAI (Optional)</h3>
-        <p>If you use AI task generation features, your prompts are processed by OpenAI. OpenAI's privacy policy applies: <a href="https://openai.com/privacy">https://openai.com/privacy</a></p>
-
-        <h2>Data Sharing and Disclosure</h2>
-        <p>We <strong>do not sell</strong> your personal information. We may share your information only in these limited circumstances:</p>
+        <h2>How We Use Information</h2>
         <ul>
-            <li><strong>With Your Consent:</strong> When you explicitly authorize us to share information</li>
-            <li><strong>Service Providers:</strong> With trusted third parties who help us operate the App (Supabase, Google, OpenAI)</li>
-            <li><strong>Legal Requirements:</strong> If required by law or to protect our rights</li>
-            <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
+            <li>Provide core app functionality, account access, and sync</li>
+            <li>Enable voice and AI features you choose to use</li>
+            <li>Process in-app purchases and subscriptions</li>
+            <li>Send reminders and notifications that you configure</li>
+            <li>Maintain reliability, debug issues, and improve performance</li>
+            <li>Detect, prevent, and investigate fraud, abuse, and security incidents</li>
+            <li>Comply with legal obligations and enforce our Terms</li>
         </ul>
 
-        <h2>Your Rights and Choices</h2>
-        <p>You have the following rights regarding your data:</p>
-
-        <h3>Access and Portability</h3>
+        <h2>Permissions and Device Features</h2>
         <ul>
-            <li>View all your data within the App</li>
-            <li>Request a copy of your data</li>
+            <li><strong>Microphone (RECORD_AUDIO):</strong> Used only for voice features such as AI Companion sessions and voice task workflows.</li>
+            <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used to deliver reminders and productivity notifications.</li>
+            <li><strong>Exact alarms (SCHEDULE_EXACT_ALARM):</strong> Used to schedule time-sensitive reminders on supported Android versions.</li>
+            <li><strong>Boot completed (RECEIVE_BOOT_COMPLETED):</strong> Used to restore scheduled reminders after device restart.</li>
         </ul>
 
-        <h3>Correction and Deletion</h3>
+        <h2>Legal Basis / Consent-Style Notice</h2>
+        <p>Depending on your region, we process data based on one or more of the following:</p>
         <ul>
-            <li>Edit or delete your tasks, routines, and challenges directly in the App</li>
-            <li>Request complete account deletion by contacting us</li>
+            <li>Performance of our contract with you (providing the app and requested features)</li>
+            <li>Your consent (for example, granting microphone/notification permissions)</li>
+            <li>Legitimate interests (service reliability, fraud prevention, security)</li>
+            <li>Compliance with legal obligations</li>
+        </ul>
+        <p>Where consent is required, you can withdraw it by changing device/app permission settings. Some features may stop working if permissions are disabled.</p>
+
+        <h2>Third-Party Services and Processors</h2>
+        <p>Bloom uses third-party providers to operate core functionality:</p>
+
+        <h3>1. Supabase</h3>
+        <ul>
+            <li><strong>Purpose:</strong> Backend database, authentication, API functions, and sync</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">https://supabase.com/privacy</a></li>
         </ul>
 
-        <h3>Opt-Out Options</h3>
+        <h3>2. Google Sign-In / Google Identity</h3>
         <ul>
-            <li><strong>Notifications:</strong> Disable push notifications in device settings</li>
-            <li><strong>AI Features:</strong> Simply don't use AI-powered features</li>
-            <li><strong>Analytics:</strong> Contact us to opt out of usage analytics</li>
+            <li><strong>Purpose:</strong> Authentication</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h3>3. Google Play Billing</h3>
+        <ul>
+            <li><strong>Purpose:</strong> Android in-app purchases and subscriptions</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h3>4. RevenueCat</h3>
+        <ul>
+            <li><strong>Purpose:</strong> Subscription and purchase entitlement management</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a></li>
+        </ul>
+
+        <h3>5. Firebase Crashlytics</h3>
+        <ul>
+            <li><strong>Purpose:</strong> Crash reporting and diagnostics</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+
+        <p>We may also route AI/voice processing through our backend infrastructure and service providers to deliver requested AI features.</p>
+
+        <h2>Sharing and Disclosure</h2>
+        <p>We do not sell personal data. We may share data:</p>
+        <ul>
+            <li>With processors/service providers to operate app functionality</li>
+            <li>When required by law, legal process, or regulatory request</li>
+            <li>To protect rights, safety, security, and prevent abuse</li>
+            <li>In connection with a merger, acquisition, financing, or transfer of assets (subject to safeguards)</li>
         </ul>
 
         <h2>Data Retention</h2>
+        <p>We retain data only as long as needed for the purposes described in this policy, including legal, accounting, and security obligations.</p>
         <ul>
-            <li><strong>Active Data:</strong> Retained while you use the App</li>
-            <li><strong>Deleted Data:</strong> Soft-deleted data is permanently removed after 30 days</li>
-            <li><strong>Account Deletion:</strong> All data is permanently deleted within 30 days of account deletion request</li>
+            <li>Account and app content are generally retained while your account is active</li>
+            <li>Diagnostic data is retained for troubleshooting, reliability, and security for a limited period</li>
+            <li>Purchase/subscription records are retained as needed for billing, tax, and fraud prevention obligations</li>
         </ul>
+
+        <h2>Your Choices and Rights</h2>
+        <p>Depending on your location, you may have rights to access, correct, delete, restrict, object to, or request portability of your personal data where applicable.</p>
+        <ul>
+            <li>Manage app permissions in your device settings (microphone, notifications)</li>
+            <li>Manage subscription billing in Google Play</li>
+            <li>Submit privacy/data requests to <strong>support@bloomapp.com</strong></li>
+        </ul>
+
+        <h2>Security</h2>
+        <p>We implement administrative, technical, and organizational safeguards intended to protect data against unauthorized access, loss, misuse, or alteration. No method of transmission or storage is completely secure.</p>
 
         <h2>Children's Privacy</h2>
-        <p>Bloom is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+        <p>Bloom is not intended for children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal data from children below the applicable age threshold.</p>
+
+        <h2>International Data Transfers</h2>
+        <p>Your information may be processed in countries other than your own, including countries where our service providers operate. Where required, we use appropriate safeguards for cross-border transfers.</p>
 
         <h2>Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
-        <ul>
-            <li>Posting the new Privacy Policy in the app</li>
-            <li>Updating the "Last Updated" date</li>
-            <li>Sending a notification if changes are significant</li>
-        </ul>
+        <p>We may update this Privacy Policy from time to time. We will post the updated version and revise the "Last Updated" date.</p>
 
         <h2>Contact Us</h2>
-        <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
         <ul>
             <li><strong>Email:</strong> support@bloomapp.com</li>
-            <li><strong>Support:</strong> https://webuyibuy.github.io/bloom-legal/</li>
+            <li><strong>Privacy URL:</strong> <a href="https://webuyibuy.github.io/bloom-legal/privacy.html" target="_blank" rel="noopener noreferrer">https://webuyibuy.github.io/bloom-legal/privacy.html</a></li>
         </ul>
 
         <div class="highlight">
-            <strong>Consent:</strong> By using Bloom, you consent to this Privacy Policy and our collection and use of information as described herein.
+            By using Bloom, you acknowledge this Privacy Policy.
         </div>
     </div>
 </body>
